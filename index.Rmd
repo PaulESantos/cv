@@ -1,5 +1,5 @@
 ---
-title: "Desiree De Leon's CV"
+title: "Paul Efren's CV"
 author: Desiree De Leon
 date: "`r Sys.Date()`"
 output:
@@ -23,7 +23,9 @@ library(tidyverse)
 # folder in project
 using_googlesheets <- TRUE
 # Just the copied URL from the sheet
-positions_sheet_loc <- "https://docs.google.com/spreadsheets/d/1eTpZBkKZH8gZJXyilYMwVmcna96mBdyhLxBB_DjQwAM/edit?usp=sharing"
+positions_sheet_loc <-"https://docs.google.com/spreadsheets/d/1mA3mqm0aSoQ57OAmDKYwAKyjAtieLEiJTbbGN09aeNs/edit?usp=sharing" 
+# desire googlesheets data
+#"https://docs.google.com/spreadsheets/d/1eTpZBkKZH8gZJXyilYMwVmcna96mBdyhLxBB_DjQwAM/edit?usp=sharing"
 # Is this sheet available for anyone to read? If you're using a private sheet
 # set this to false and go to gather_data.R and run the data loading manually
 # once to cache authentication
@@ -32,8 +34,8 @@ sheet_is_publicly_readable <- TRUE
 # set this to true to have links turned into footnotes at the end of the
 # document
 PDF_EXPORT <- FALSE
-CV_PDF_LOC <- "github.com/dcossyleon/cv/raw/master/cv.pdf"
-CV_HTML_LOC <- "dcossyleon.github.io/cv/"
+CV_PDF_LOC <- "github.com/PaulESantos/cv/raw/master/cv.pdf"
+CV_HTML_LOC <- "paulesantos.github.io/cv/"
 # A global (gasp) variable that holds all the links that were inserted for
 # placement at the end
 links <- c()
@@ -62,7 +64,7 @@ if(PDF_EXPORT){
 
 <div class="header-block">
   <div class="header-block-inner">
-  <div class="title">Desirée De&nbsp;Leon</div>
+  <div class="title">Paul Efren</div>
   
 
   </div>
@@ -81,6 +83,7 @@ Aside
 
 ```{r}
 # When in export mode the little dots are unaligned, so fix that. 
+# title line 67 : Desirée De&nbsp;Leon
 if(PDF_EXPORT){
   glue("View this CV online with links at _{CV_HTML_LOC}_")
 } else {
@@ -124,7 +127,7 @@ Disclaimer {#disclaimer}
 
 Made with the R package [**pagedown**](https://github.com/rstudio/pagedown). 
 
-Source code available: [github.com/dcossyleon/cv](https://github.com/dcossyleon/cv).
+Source code available: [github.com/PaulESantos/cv](https://github.com/PaulESantos/cv/).
 
 Updated: `r Sys.Date()`.
 
@@ -133,7 +136,7 @@ Updated: `r Sys.Date()`.
 Main
 ================================================================================
 
-Desiree De Leon {#title}
+Paul Efren Santos Andrade {#title}
 --------------------------------------------------------------------------------
 
 Education {data-icon=graduation-cap data-concise=true}
@@ -143,13 +146,6 @@ Education {data-icon=graduation-cap data-concise=true}
 print_section(position_data, 'education')
 ```
 
-
-Awards & Scholarships {data-icon=trophy}
---------------------------------------------------------------------------------
-
-```{r}
-print_section(position_data, 'honors_awards')
-```
 
 Research & Data Science Experience {data-icon=laptop}
 --------------------------------------------------------------------------------
