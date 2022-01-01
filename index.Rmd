@@ -164,9 +164,7 @@ print_section(position_data, 'research_data')
 <br>
 <br>
 <br>
-<br>
-<br>
-<br>
+
 
 Teaching and Project Management {data-icon=chalkboard-teacher}
 --------------------------------------------------------------------------------
@@ -181,19 +179,6 @@ print_text_block(text_blocks, 'teaching_experience_aside')
 print_section(position_data, 'teaching_positions')
 ```
 
-
-Web Design & Illustration {data-icon=pen-nib}
---------------------------------------------------------------------------------
-
-::: aside
-```{r}
-print_text_block(text_blocks, 'design_aside')
-```
-:::
-
-```{r}
-print_section(position_data, 'design')
-```
 
 <!-- These breaks just force a new page so section doesnt get cut off -->
 <br>
