@@ -6,7 +6,6 @@ output:
    pagedown::html_resume:
     css: ['css/styles.css', 'resume']
     # set it to true for a self-contained HTML page but it'll take longer to render
-    # pagedown::html_resume
     self_contained: true
 ---
 
@@ -34,7 +33,7 @@ sheet_is_publicly_readable <- TRUE
 # Is the goal of this knit to build a document that is exported to PDF? If so
 # set this to true to have links turned into footnotes at the end of the
 # document
-PDF_EXPORT <- TRUE
+PDF_EXPORT <- FALSE
 #https://github.com/PaulESantos/cv/blob/main/cv.pdf
 CV_PDF_LOC <-  "github.com/PaulESantos/cv/main/cv.pdf"
   #"github.com/PaulESantos/cv/raw/master/cv.pdf"
