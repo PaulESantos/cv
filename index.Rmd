@@ -7,6 +7,7 @@ output:
     css: ['css/styles.css', 'resume']
     # set it to true for a self-contained HTML page but it'll take longer to render
     self_contained: true
+      
 ---
 
 ```{r, include=FALSE}
@@ -35,7 +36,7 @@ sheet_is_publicly_readable <- TRUE
 # document
 PDF_EXPORT <- FALSE
 #https://github.com/PaulESantos/cv/blob/main/cv.pdf
-CV_PDF_LOC <-  "github.com/PaulESantos/cv/main/cv.pdf"
+CV_PDF_LOC <-  "github.com/PaulESantos/cv/blob/main/cv.pdf"
   #"github.com/PaulESantos/cv/raw/master/cv.pdf"
 CV_HTML_LOC <- "paulesantos.github.io/cv/"
 # A global (gasp) variable that holds all the links that were inserted for
